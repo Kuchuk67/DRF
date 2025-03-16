@@ -22,12 +22,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv("SECRET_KEY")
+SECRET_KEY = 'django-insecure-hey&xpz&jd#4$(y0ffwvy*@-5(@5mch2=(g(s4i#wkqcpegi6z'
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
+AUTH_USER_MODEL = "users.CustomUser"
 
 # Application definition
 
@@ -39,6 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'education',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -74,7 +78,23 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+"""load_dotenv()
+SQL_HOST = os.getenv("SQL_HOST")
+SQL_DATABASE = os.getenv("SQL_DATABASE")
+SQL_USER = os.getenv("SQL_USER")
+SQL_PASS = os.getenv("SQL_PASS")
+SQL_PORT = os.getenv("SQL_PORT")"""
 
+"""ATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": SQL_DATABASE,
+        "USER": SQL_USER,
+        "PASSWORD": SQL_PASS,
+        "HOST": SQL_HOST,
+        "PORT": SQL_PORT,
+    }
+}"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
