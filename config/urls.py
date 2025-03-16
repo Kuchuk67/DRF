@@ -12,14 +12,14 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('lessons/', LessonListViewSet.as_view()),
     path('lessons/create/', LessonCreateViewSet.as_view()),
-    path('lessons/<int:pk>/update/>', LessonUpdateViewSet.as_view()),
+    path('lessons/<int:pk>/update/', LessonUpdateViewSet.as_view()),
     path('lessons/<int:pk>/', LessonRetrieveViewSet.as_view()),
     path('lessons/<int:pk>/delete/', LessonDestroyViewSet.as_view()),
 ]
 
 # Описание маршрутизации для ViewSet
 router = DefaultRouter()
-router.register(r'course', CourseViewSet, basename='user')
+router.register(r'course', CourseViewSet)
 urlpatterns += router.urls
 
 
