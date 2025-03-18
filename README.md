@@ -16,3 +16,8 @@
 
 ## CRUD для моделей урока.
 Для реализации CRUD используются Generic-классы.
+
+
+
+python  -Xutf8 manage.py dumpdata education.Course --output data_test\Course_fixture.json --indent 4
+python  -Xutf8 manage.py dumpdata education.Lesson --output data_test\Lesson_fixture.json --indent 4
