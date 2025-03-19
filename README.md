@@ -1,5 +1,39 @@
 # DRF
 
+# Тестовые данные
+
+```
+python manage.py loaddata data_test\Course_fixture.json
+python manage.py loaddata data_test\Lesson_fixture.json
+python manage.py loaddata data_test\User_fixture.json
+python manage.py loaddata data_test\Pay_fixture.json
+```
+
+## API эндпоинт вывода списка платежей
+#### Примеры:
+менять порядок сортировки по дате оплаты
+фильтровать по пользователю
+```
+/api/pay?user=1
+```
+фильтровать по курсу или уроку
+```
+/api/pay?paid_course=1
+/api/pay?paid_lesson=1
+```
+фильтровать по способу оплаты
+```
+/api/pay?payment_method=transfer
+```
+сортировка по дате 
+```
+/api/pay?ordering=-data_at
+```
+
+
+
+
+
 ### Создана модель User
 добавлены поля :телефон; город; аватарка
 
@@ -19,10 +53,7 @@
 
 
 
-python manage.py loaddata data_test\Course_fixture.json
-python manage.py loaddata data_test\Lesson_fixture.json
-python manage.py loaddata data_test\User_fixture.json
-python manage.py loaddata data_test\Pay_fixture.json
+
 
 
 python  -Xutf8 manage.py dumpdata education.Course --output data_test\Course_fixture.json --indent 4
