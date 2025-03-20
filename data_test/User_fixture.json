@@ -1,0 +1,23 @@
+[
+{
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$870000$h58uhvliyyuUQJkhWRHsGm$Hm5Dyf987i0zwTMjqwqICl96CvEpTlKRF/0YjjGuGrQ=",
+        "last_login": null,
+        "is_superuser": true,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2025-03-18T13:50:08.348Z",
+        "username": "admin",
+        "email": "admin@admin.ru",
+        "avatar": "",
+        "city": "",
+        "number_phone": "",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

@@ -1,0 +1,112 @@
+[
+{
+    "model": "education.lesson",
+    "pk": 1,
+    "fields": {
+        "name_lesson": "урок1",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 1
+    }
+},
+{
+    "model": "education.lesson",
+    "pk": 2,
+    "fields": {
+        "name_lesson": "урок2",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 1
+    }
+},
+{
+    "model": "education.lesson",
+    "pk": 3,
+    "fields": {
+        "name_lesson": "урок 3",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 1
+    }
+},
+{
+    "model": "education.lesson",
+    "pk": 4,
+    "fields": {
+        "name_lesson": "урок 4",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 1
+    }
+},
+{
+    "model": "education.lesson",
+    "pk": 5,
+    "fields": {
+        "name_lesson": "урок 2",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 2
+    }
+},
+{
+    "model": "education.lesson",
+    "pk": 6,
+    "fields": {
+        "name_lesson": "урок 1",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 2
+    }
+},
+{
+    "model": "education.lesson",
+    "pk": 7,
+    "fields": {
+        "name_lesson": "урок 1",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 3
+    }
+},
+{
+    "model": "education.lesson",
+    "pk": 8,
+    "fields": {
+        "name_lesson": "урок 2",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 3
+    }
+},
+{
+    "model": "education.lesson",
+    "pk": 9,
+    "fields": {
+        "name_lesson": "урок 3",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 3
+    }
+},
+{
+    "model": "education.lesson",
+    "pk": 10,
+    "fields": {
+        "name_lesson": "урок 1",
+        "description": "Урок – основная единица образовательного процесса, чётко ограниченная временными рамками (45 минут), планом работы и составом участников.",
+        "img_lesson": "",
+        "link_video": "http://fdgdf4.com/rgt/tht/",
+        "course": 4
+    }
+}
+]
