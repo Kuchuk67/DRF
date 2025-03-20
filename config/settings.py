@@ -22,7 +22,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-hey&xpz&jd#4$(y0ffwvy*@-5(@5mch2=(g(s4i#wkqcpegi6z'
+
+
+# Загрузка переменных из .env-файла
+load_dotenv()
+SECRET_KEY = os.getenv("SECRET_KEY")
+
+SQL_HOST = os.getenv("SQL_HOST")
+SQL_DATABASE = os.getenv("SQL_DATABASE")
+SQL_USER = os.getenv("SQL_USER")
+SQL_PASS = os.getenv("SQL_PASS")
+SQL_PORT = os.getenv("SQL_PORT")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -79,14 +89,9 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-"""load_dotenv()
-SQL_HOST = os.getenv("SQL_HOST")
-SQL_DATABASE = os.getenv("SQL_DATABASE")
-SQL_USER = os.getenv("SQL_USER")
-SQL_PASS = os.getenv("SQL_PASS")
-SQL_PORT = os.getenv("SQL_PORT")"""
 
-"""ATABASES = {
+
+DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
         "NAME": SQL_DATABASE,
@@ -94,12 +99,6 @@ SQL_PORT = os.getenv("SQL_PORT")"""
         "PASSWORD": SQL_PASS,
         "HOST": SQL_HOST,
         "PORT": SQL_PORT,
-    }
-}"""
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
